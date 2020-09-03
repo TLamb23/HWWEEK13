@@ -1,5 +1,3 @@
--- populate at least 3 burgers
-use burgers_db;
-
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('Jalpeno Popper Burger', FALSE), ('Hawaiian Burger', FALSE), ('Western Burger', true), ('El Jefe Burger', true);
+INSERT INTO burgers_db (burger_name) VALUES ('Bacon Burger')
+INSERT INTO burgers_db (burger_name) VALUES ('Mushroom Burger')
+INSERT INTO burgers_db (burger_name, devoured) VALUES ('Veggie Burger', true)

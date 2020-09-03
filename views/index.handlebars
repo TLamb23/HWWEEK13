@@ -1,77 +1,33 @@
-{{!-- create button to submit user input into database --}}
-<div class="row">
-    <!-- create header column -->
-    <div class="col-md-12 text-center">
-        <h1 class="title">Eat-Da-Burger!</h1>
-        <!--End Column -->
-    </div>
-    <!-- End row -->
-</div>
-<!-- New row for image -->
-<div class="row">
-    <!-- Image column -->
-    <div class="col-md-12 text-center">
-        <img src="/assets/img/triple-cheeseburger.png" alt="Image of burger" style="max-width: 20%" ; />
-        <!--End Column -->
-    </div>
-    <!-- End row -->
-</div>
+<h1>Burgers!</h1>
+
+<h2>Burgers to be devoured</h2>
+
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            <button class="eatMe" data-id="{{id}}" type="button">
+            {{ burger_name }}  </button>
+        {{/unless}}
+    {{/each}}
+</ul>
 
 
-<div class="row" id="add-a-burger-hdrRow">
-        <div class="col-md-12" id="add-a-burger-hderCol" style="text-align: center;">
-            <h2>Add a Burger</h2>
-        </div>
-    </div>
+<h2>Burgers that have been devoured</h2>
+
+<ul>
+    {{#each burgers}}
+        {{#if devoured}}
+             {{ burger_name }} ||
+        {{/if}}
+    {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
 <form class="create-form">
+  <div>
+    <label for="burgerAdd">Burger Type</label>
+    <input type="text" id="burger" name="burger_name">
+  </div>
 
-        <div class="row" id="formRow">
-            <!-- create burger column -->
-            <div class="col-md-12 text-center" style="text-align: center;">
-                <!-- Create Burger form -->
-
-
-
-                <div class="form-group">
-                    <label for="ca">Burger:</label>
-                    <input type="text" id="ca" name="name">
-                </div>
-
-
-                <button type="submit">Add Burger</button>
-                <!--End Column -->
-            </div>
-            <!-- End row -->
-        </div>
-        <!-- End form -->
-    </form>
-
-<div class="container mt-3">
-    <div class="row">
-        <!-- Burgers to eat -->
-        <div class="col-md-6 text-center eaten">
-            <h2 class="title2 to-eat mx-auto">Burgers to Eat</h2>
-            <div>
-                <ul>
-                    {{#each burger}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-        <!-- Burgers that have been eaten -->
-        <div class="col-md-6 text-center eaten">
-            <h2 class="title2 devoured mx-auto">Burgers I Ate</h2>
-            <div>
-                <ul>
-                    {{#each burger}}
-                    {{#if devoured}}
-                    {{> burgers/burger-block devoured=false}}
-                    {{/if}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-    </div>
+  <button type="submit" class="submit">Add Burger</button>
+</form>

@@ -1,23 +1,22 @@
 {
-  "name": "week13homework",
+  "name": "burger-logger",
   "version": "1.0.0",
   "description": "### Overview",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmarti9/week13homework.git"
+    "url": "git+https://github.com/Akessler314/burger-logger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pmarti9/week13homework/issues"
+    "url": "https://github.com/Akessler314/burger-logger/issues"
   },
-  "homepage": "https://github.com/pmarti9/week13homework#readme",
+  "homepage": "https://github.com/Akessler314/burger-logger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
