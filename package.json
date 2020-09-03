@@ -1,26 +1,26 @@
 {
-  "name": "burger2.0",
+  "name": "week13homework",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "### Overview",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SWHorne/burger2.0.git"
+    "url": "git+https://github.com/pmarti9/week13homework.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SWHorne/burger2.0/issues"
+    "url": "https://github.com/pmarti9/week13homework/issues"
   },
-  "homepage": "https://github.com/SWHorne/burger2.0#readme",
+  "homepage": "https://github.com/pmarti9/week13homework#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
+    "express-handlebars": "^4.0.4",
     "mysql": "^2.18.1"
   }
 }
